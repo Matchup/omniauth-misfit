@@ -54,7 +54,7 @@ module OmniAuth
 
       private
       def client_params
-        {:client_id => options[:client_id], :redirect_uri => redirect_uri, :response_type => 'code', :scope => DEFAULT_SCOPE}
+        {:client_id => options[:client_id], :redirect_uri => callback_url, :response_type => 'code', :scope => DEFAULT_SCOPE}
       end
     end
   end
