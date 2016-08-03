@@ -35,8 +35,8 @@ module OmniAuth
         }
       end
 
-      def redirect_uri
-        full_host + script_name + callback_path
+      def callback_url
+        callback = full_host + script_name + callback_path
       end
 
       def request_phase
